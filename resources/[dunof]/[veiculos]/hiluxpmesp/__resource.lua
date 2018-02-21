@@ -1,3 +1,9 @@
+-- Skin from
+-- https://pt.gta5-mods.com/paintjobs/toyota-hilux-sw4-policia-militar-pmesp-choque
+-- Credits: mike cavalcante, DanielCR
+-- FXServer Import by DuNOF
+-- https://github.com/dunof/DuNOF-vRP
+
 resource_manifest_version '77731fab-63ca-442c-a67b-abc70f28dfa5'
 
 files {
