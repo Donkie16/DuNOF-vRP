@@ -40,26 +40,26 @@ Citizen.CreateThread(function()
 			end
 		end
 
-		local t = 0
-			for i = 0,32 do
-				if(GetPlayerName(i))then
+--		local t = 0
+--			for i = 0,32 do
+--				if(GetPlayerName(i))then
 					if(NetworkIsPlayerTalking(i))then
 						t = t + 1
 
 						if(t == 1)then
-								drawTxt(0.515, 0.95, 1.0,1.0,0.4, "~y~Talking", 255, 255, 255, 255)
+								drawTxt(0.515, 0.95, 1.0,1.0,0.4, "~y~Falando", 255, 255, 255, 255)
 						end
 
-						drawTxt(0.520, 0.95 + (t * 0.023), 1.0,1.0,0.4, "" .. GetPlayerName(i), 255, 255, 255, 255)
+						drawTxt(0.520, 0.95 + (t * 0.023), 1.0,1.0,0.4, "" .. GetPlayerServerId(id), 255, 255, 255, 255)
 					end
 				end
 			end
 
-		if(IsPedInAnyVehicle(GetPlayerPed(-1), false))then
-			local speed = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false)) * 2.236936
-
-			drawTxt(1.407, 1.30, 1.0,1.0,0.7, "~y~" .. math.ceil(speed) .. "", 255, 255, 255, 255)
-			drawTxt(1.4, 1.337, 1.0,1.0,0.7, "~b~ mph", 255, 255, 255, 255)
-		end
+--		if(IsPedInAnyVehicle(GetPlayerPed(-1), false))then
+--			local speed = GetEntitySpeed(GetVehiclePedIsIn(GetPlayerPed(-1), false)) * 2.236936
+--
+--			drawTxt(1.407, 1.30, 1.0,1.0,0.7, "~y~" .. math.ceil(speed) .. "", 255, 255, 255, 255)
+--			drawTxt(1.4, 1.337, 1.0,1.0,0.7, "~b~ mph", 255, 255, 255, 255)
+--		end
 	end
 end)
