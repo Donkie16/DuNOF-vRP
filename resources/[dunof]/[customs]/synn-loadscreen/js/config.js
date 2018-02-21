@@ -4,12 +4,12 @@ var config =
         Do we want to show the image?
         Note that imageSize still affects the size of the image and where the progressbars are located.
     */
-    enableImage: true,
+    enableImage: false,
 
     /* 
         Relative path the the logo we want to display.
     */
-    image: "img/logo.png",
+    image: "img/ikas.png",
 
     /*
         How big should the logo be?

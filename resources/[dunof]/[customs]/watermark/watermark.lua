@@ -1,7 +1,7 @@
 -- CONFIG --
 
 -- The watermark text --
-servername = "REALISMO ROLEPLAY [Beta 0.1]"
+servername = "DUNOF ROLEPLAY [Beta 0.1]"
 
 -- The x and y offset (starting at the top left corner) --
 -- Default: 0.005, 0.001
@@ -28,7 +28,7 @@ font = 4
 -- Rainbow Text --
 -- false: Turn off
 -- true: Activate rainbow text (overrides color)
-bringontherainbows = false
+bringontherainbows = true
 
 -- CODE --
 Citizen.CreateThread(function()
