@@ -55,6 +55,7 @@ AddEventHandler("vRP:playerSpawn", function(user_id, source, first_spawn)
   else -- not first spawn (player died), don't load weapons, empty wallet, empty inventory
     vRP.setHunger(user_id,0)
     vRP.setThirst(user_id,0)
+    vRP.clearInventory(user_id)
 
     if cfg.clear_phone_directory_on_death then
       data.phone_directory = {} -- clear phone directory after death
