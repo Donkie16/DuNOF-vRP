@@ -431,7 +431,6 @@ local ch_jail = {function(player,choice)
 					  BMclient.loadFreeze(target,{false})
 					end)
 				    vRPclient.teleport(target,{1641.5477294922,2570.4819335938,45.564788818359}) -- teleport to inside jail
-					vRPclient.toggleHandcuff(nplayer,{})
 				    vRPclient.notify(target,{"~r~You have been sent to jail."})
 				    vRPclient.notify(player,{"~b~You sent a player to jail."})
 				    vRP.setHunger({tonumber(target_id),0})
@@ -854,7 +853,7 @@ end,"Spawn a vehicle model."}
 
 -- lockpick vehicle
 local ch_lockpickveh = {function(player,choice) 
-	BMclient.lockpickVehicle(player,{20,false}) -- 20s to lockpick, allow to carjack unlocked vehicles (has to be true for NoCarJack Compatibility)
+	BMclient.lockpickVehicle(player,{60,true}) -- 20s to lockpick, allow to carjack unlocked vehicles (has to be true for NoCarJack Compatibility)
 end,"Lockpick closest vehicle."}
 
 
@@ -867,7 +866,7 @@ function(args)
     local user_id = vRP.getUserId({player})
     if user_id ~= nil then
       if vRP.tryGetInventoryItem({user_id, "lockpicking_kit", 1, true}) then
-		BMclient.lockpickVehicle(player,{20,false}) -- 20s to lockpick, allow to carjack unlocked vehicles (has to be true for NoCarJack Compatibility)
+		BMclient.lockpickVehicle(player,{60,true}) -- 20s to lockpick, allow to carjack unlocked vehicles (has to be true for NoCarJack Compatibility)
         vRP.closeMenu({player})
       end
     end

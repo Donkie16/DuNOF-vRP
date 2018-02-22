@@ -2,7 +2,7 @@
  
 local showPlayerBlips = false
 local ignorePlayerNameDistance = false
-local disPlayerNames = 7
+local disPlayerNames = 15
 local playerSource = 0
  
 function DrawText3D(x,y,z, text, r,g,b) -- some useful function, use it if you want!

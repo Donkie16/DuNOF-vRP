@@ -19,7 +19,7 @@ client_scripts{
   "deletepoliceweapons-client.lua",
   "deathmessages-client.lua",
   "gameui-client.lua",
-  "names-client.lua",
+  --"names-client.lua",
   -- "deletevehicle-client.lua",
   "weathersync-client.lua",
   -- "fix-client.lua",
