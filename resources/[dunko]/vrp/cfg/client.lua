@@ -4,7 +4,7 @@ local cfg = {}
 
 cfg.iplload = true
 
-cfg.voice_proximity = 30.0 -- default voice proximity (outside)
+cfg.voice_proximity = 15.0 -- default voice proximity (outside)
 cfg.voice_proximity_vehicle = 5.0
 cfg.voice_proximity_inside = 9.0
 
