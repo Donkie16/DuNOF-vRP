@@ -486,7 +486,7 @@ cfg.groups = {
 		"forger.mission"
 	},
 
-	["Traficande de Drogas"] = {
+	["Traficante de Drogas"] = {
 		_config = { gtype = "job",
 			onspawn = function(player) vRPclient.notify(player,{"Voce esta trabalhando como Traficante de Drogas."}) end
 		},
@@ -563,62 +563,33 @@ cfg.users = {
 
 cfg.selectors = {
 
-	["Lista de Empregos"] = {
-		_config = {x = -268.363739013672, y = -957.255126953125, z = 31.22313880920410, blipid = 351, blipcolor = 47},
-		"UBER",
-		"Mecanico",
-		"Delivery",
-		"Transporte de Valores",
-		"Pescador",
-		"Transporte Medico",
-		"Desempregado"
-	},
-
-	["Empregos Policia"] = { -- Alta Street
+	["Depto Policia Alta"] = { -- Alta Street
 		_config = {x = 447.35137939453, y = -975.57592773438, z = 30.689584732056, blipid = 351, blipcolor = 38, permissions = {"cop.whitelisted"} },
-		"State Trooper",
-		"Police Captain",
-		"Police Lieutenant",
-		"Policia Civil",
-		"Police Sergeant",
-		"Sheriff",
-		"Deputy Sheriff",
-		"Policia Militar",
-		"Dispatcher",
 		"Recruta",
+		"Policia Civil",
+,		"Policia Militar",
 		"BOPE",
+		"Chefe da Policia",
 		"Desempregado"
 	},
 
-	["Police job 2"] = { -- Sandy Shores
+	["Depto Policia Sandy"] = { -- Sandy Shores
 		_config = {x = 1857.5961914063, y = 3688.8952636719, z = 34.267040252686, blipid = 351, blipcolor = 38, permissions = {"cop.whitelisted"} },
-		"State Trooper",
-		"Police Captain",
-		"Police Lieutenant",
-		"Policia Civil",
-		"Police Sergeant",
-		"Sheriff",
-		"Deputy Sheriff",
-		"Policia Militar",
-		"Dispatcher",
 		"Recruta",
+		"Policia Civil",
+,		"Policia Militar",
 		"BOPE",
+		"Chefe da Policia",
 		"Desempregado"
 	},
 
-	["Police job 3"] = { -- Paleto Bay
+	["Depto Policia Paleto"] = { -- Paleto Bay
 		_config = {x = -449.00927734375, y = 6017.1953125, z = 31.716377258301, blipid = 351, blipcolor = 38, permissions = {"cop.whitelisted"} },
-		"State Trooper",
-		"Police Captain",
-		"Police Lieutenant",
-		"Policia Civil",
-		"Police Sergeant",
-		"Sheriff",
-		"Deputy Sheriff",
-		"Policia Militar",
-		"Dispatcher",
 		"Recruta",
+		"Policia Civil",
+,		"Policia Militar",
 		"BOPE",
+		"Chefe da Policia",
 		"Desempregado"
 	},
 
@@ -631,21 +602,26 @@ cfg.selectors = {
 		"Desempregado"
 	},
 
-	["Cargo Advocacia"] = {
+	["Cargos Tribunal"] = {
+		_config = {x = -59.127178192139, y = 359.25082397461, z = 113.05643463135, blipid = 351, blipcolor = 7, permissions = {"Judge.whitelisted"} },
+		"Juiz",
+		"Desempregado"
+	},
+
+	["Cargos Advocacia"] = {
 		_config = {x = -1911.9273681641, y = -569.71649169922, z = 19.097215652466, blipid = 351, blipcolor = 7, permissions = {"Lawyer.whitelisted"} },
 		"Advogado",
 		"Desempregado"
 	},
 
-	["Trabalho Ilegal"] = {
-		_config = {x = 1865.1586914063, y = 3749.4343261719, z = 33.046268463135, blipid = 277, blipcolor = 4},
-		"Traficande de Drogas",
-		"Desempregado"
-	},
-
-	["Trabalho Ilegai"] = {
-		_config = {x = 283.10546875, y = 6788.7104492188, z = 15.695198059082, blipid =  150, blipcolor = 4},
-		"Contrabandista de Armas",
+	["Lista de Empregos"] = {
+		_config = {x = -268.363739013672, y = -957.255126953125, z = 31.22313880920410, blipid = 351, blipcolor = 47},
+		"UBER",
+		"Mecanico",
+		"Delivery",
+		"Transporte de Valores",
+		"Pescador",
+		"Transporte Medico",
 		"Desempregado"
 	},
 
@@ -661,25 +637,31 @@ cfg.selectors = {
 		"Desempregado"
 	},
 
-	["Emprego"] = {
+	["Emprego de Coletor"] = {
 		_config = {x = 750.05029296875, y = -1402.9224853516, z = 26.549806594849,blipid = 318, blipcolor = 2}, -- Job starts here
 		"Coletor de Lixo",
 		"Desempregado"
 	},
 
-	["Cargo Tribunal"] = {
-		_config = {x = -59.127178192139, y = 359.25082397461, z = 113.05643463135, blipid = 351, blipcolor = 7, permissions = {"Judge.whitelisted"} },
-		"Juiz",
+	["Trabalho Ilegal - Trafico"] = {
+		_config = {x = 1865.1586914063, y = 3749.4343261719, z = 33.046268463135, blipid = 277, blipcolor = 4},
+		"Traficante de Drogas",
 		"Desempregado"
 	},
 
-	["Trabalhos Ilegais"] = {
+	["Trabalho Ilegal - Contrabando"] = {
+		_config = {x = 283.10546875, y = 6788.7104492188, z = 15.695198059082, blipid =  150, blipcolor = 4},
+		"Contrabandista de Armas",
+		"Desempregado"
+	},
+
+	["Trabalho Ilegal - Falsificacao"] = {
 		_config = {x = 388.61703491211, y = 3587.1179199219, z = 33.292263031006, blipid = 472, blipcolor = 4},
 		"Falsificador",
 		"Desempregado"
 	},
 
-	["Trabalho Ilegal"] = {
+	["Trabalho Ilegal - Hacker"] = {
 		_config = {x = 705.682189941406, y = -966.919067382813, z = 30.3953418731689, blipid = 472, blipcolor = 4},
 		"Hacker",
 		"Desempregado"
