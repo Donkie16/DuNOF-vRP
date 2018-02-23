@@ -64,27 +64,27 @@ end
 
 -- DRINKS --
 
-items["water"] = {"Water","", gen("drink",0,-25),0.5}
-items["milk"] = {"Milk","", gen("drink",0,-5),0.5}
-items["coffee"] = {"Coffee","", gen("drink",0,-10),0.2}
-items["tea"] = {"Tea","", gen("drink",0,-15),0.2}
-items["icetea"] = {"Ice-Tea","", gen("drink",0,-20), 0.5}
-items["orangejuice"] = {"Orange Juice","", gen("drink",0,-25),0.5}
+items["water"] = {"Agua","", gen("drink",0,-25),0.5}
+items["milk"] = {"Leite","", gen("drink",0,-5),0.5}
+items["coffee"] = {"Cafe","", gen("drink",0,-10),0.2}
+items["tea"] = {"Cha","", gen("drink",0,-15),0.2}
+items["icetea"] = {"Cha Gelado","", gen("drink",0,-20), 0.5}
+items["orangejuice"] = {"Suco de Laranja","", gen("drink",0,-25),0.5}
 items["gocagola"] = {"Coca Cola","", gen("drink",0,-35),0.3}
 items["redgull"] = {"Red Bull","", gen("drink",0,-40),0.3}
-items["lemonlimonad"] = {"Lemonade","", gen("drink",0,-45),0.3}
+items["lemonlimonad"] = {"Lemonada","", gen("drink",0,-45),0.3}
 items["vodka"] = {"Vodka","", gen("drink",15,-65),0.5}
 
 --FOOD
 
 -- create Breed item
-items["bread"] = {"Bread","", gen("eat",-10,0),0.5}
-items["donut"] = {"Donut","", gen("eat",-15,0),0.2}
-items["tacos"] = {"Tacos","", gen("eat",-20,0),0.2}
-items["sandwich"] = {"Sandwich","A tasty snack.", gen("eat",-25,0),0.5}
+items["bread"] = {"Misto Quente","", gen("eat",-10,0),0.5}
+items["donut"] = {"Rosquinhas","", gen("eat",-15,0),0.2}
+items["tacos"] = {"Cachorro-quente","", gen("eat",-20,0),0.2}
+items["sandwich"] = {"Sanduiche","Um lanchinho saboroso!", gen("eat",-25,0),0.5}
 items["kebab"] = {"Kebab","", gen("eat",-45,0),0.85}
-items["pdonut"] = {"Premium Donut","", gen("eat",-25,0),0.5}
-items["catfish"] = {"Catfish","", gen("eat",10,15),0.3}
-items["bass"] = {"Bass","", gen("eat",10,15),0.3}
+items["pdonut"] = {"Pizza","", gen("eat",-25,0),0.5}
+items["catfish"] = {"Churrasco","", gen("eat",10,15),0.3}
+items["bass"] = {"Prato Feito","", gen("eat",10,15),0.3}
 
 return items

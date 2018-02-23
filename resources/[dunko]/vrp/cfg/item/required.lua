@@ -1,13 +1,13 @@
 
 local items = {}
 
-items["medkit"] = {"Medical Kit","Used to reanimate unconscious people.",nil,0.5}
-items["dirty_money"] = {"Dirty money","Illegally earned money.",nil,0}
-items["repairkit"] = {"Repair Kit","Used to repair vehicles.",nil,0.5}
+items["medkit"] = {"Kit Medico","Usado para reanimar pessoas inconscientes.",nil,0.5}
+items["dirty_money"] = {"Dinheiro Sujo","Dinheiro ganho de forma Ilegal.",nil,0}
+items["repairkit"] = {"Kit de Reparo","Usado para reparar veiculos.",nil,0.5}
 
 
 -- money
-items["money"] = {"Money","Packed money.",function(args)
+items["money"] = {"Dinheiro","Dinheiro embalado.",function(args)
   local choices = {}
   local idname = args[1]
 
@@ -15,7 +15,7 @@ items["money"] = {"Money","Packed money.",function(args)
     local user_id = vRP.getUserId(player)
     if user_id ~= nil then
       local amount = vRP.getInventoryItemAmount(user_id, idname)
-      vRP.prompt(player, "How much to unpack ? (max "..amount..")", "", function(player,ramount)
+      vRP.prompt(player, "Quanto voce quer desenbalar? (max "..amount..")", "", function(player,ramount)
         ramount = parseInt(ramount)
         if vRP.tryGetInventoryItem(user_id, idname, ramount, true) then -- unpack the money
           vRP.giveMoney(user_id, ramount)
@@ -29,7 +29,7 @@ items["money"] = {"Money","Packed money.",function(args)
 end,0}
 
 -- money binder
-items["money_binder"] = {"Money binder","Used to bind 1000$ of money.",function(args)
+items["money_binder"] = {"Contador de Cedulas","Usado para separar o dinheiro em pacotes de $1000.",function(args)
   local choices = {}
   local idname = args[1]
 
@@ -112,7 +112,7 @@ local wammo_choices = function(args)
     local user_id = vRP.getUserId(player)
     if user_id ~= nil then
       local amount = vRP.getInventoryItemAmount(user_id, fullidname)
-      vRP.prompt(player, "Amount to load ? (max "..amount..")", "", function(player,ramount)
+      vRP.prompt(player, "Quantidade para carregar ? (max "..amount..")", "", function(player,ramount)
         ramount = parseInt(ramount)
 
         vRPclient.getWeapons(player, {}, function(uweapons)
