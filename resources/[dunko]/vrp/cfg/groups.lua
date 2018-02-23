@@ -144,7 +144,6 @@ cfg.groups = {
 			onleave = function(player) vRPclient.setCop(player,{true}) end
 		},
 		"Detective.cloakroom",
-		"highway.cloakroom",
 		"police.pc",
 		--"police.handcuff",
 		"police.putinveh",
@@ -189,7 +188,6 @@ cfg.groups = {
 			onleave = function(player) vRPclient.setCop(player,{true}) end
 		},
 		"Officer.cloakroom",
-		"highway.cloakroom",
 		"police.pc",
 		--"police.handcuff",
 		"police.putinveh",
