@@ -9,11 +9,11 @@
 --	https://github.com/iEns/RealisticVehicleFailure
 --
 
-local deformationMultiplier = 10.0				-- How much should the vehicle visually deform from a collision. Range 0.0 to 10.0 Where 0.0 is no deformation and 10.0 is 10x deformation. -1 = Don't touch
+local deformationMultiplier = 5.0				-- How much should the vehicle visually deform from a collision. Range 0.0 to 10.0 Where 0.0 is no deformation and 10.0 is 10x deformation. -1 = Don't touch
 local weaponsDamageMultiplier = 0.01			-- How much damage should the vehicle get from weapons fire. Range 0.0 to 10.0, where 0.0 is no damage and 10.0 is 10x damage. -1 = don't touch
-local damageFactorEngine = 10.0					-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 10
-local damageFactorBody = 10.0					-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 10
-local damageFactorPetrolTank = 64.0				-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 64
+local damageFactorEngine = 8.0					-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 10
+local damageFactorBody = 5.0					-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 10
+local damageFactorPetrolTank = 44.0				-- Sane values are 1 to 100. Higher values means more damage to vehicle. A good starting point is 64
 local cascadingFailureSpeedFactor = 8.0			-- Sane values are 1 to 100. When vehicle health drops below a certain point, cascading failure sets in, and the health drops rapidly until the vehicle dies. Higher values means faster failure. A good starting point is 8
 local degradingHealthSpeedFactor = 10			-- Speed of slowly degrading health, but not failure. Value of 10 means that it will take about 0.25 second per health point, so degradation from 800 to 305 will take about 2 minutes of clean driving.
 local degradingFailureThreshold = 800.0			-- Below this value, slow health degradation will set in
@@ -24,49 +24,49 @@ local displayBlips = true						-- Show blips for mechanics locations
 
 -- id=446 for wrench icon, id=72 for spraycan icon
 local mechanics = {
-	{name="Mechanic", id=446, r=25.0, x=-337.0,  y=-135.0,  z=39.0},	-- LSC Burton
-	{name="Mechanic", id=446, r=25.0, x=-1155.0, y=-2007.0, z=13.0},	-- LSC by airport
-	{name="Mechanic", id=446, r=25.0, x=734.0,   y=-1085.0, z=22.0},	-- LSC La Mesa
-	{name="Mechanic", id=446, r=25.0, x=1177.0,  y=2640.0,  z=37.0},	-- LSC Harmony
-	{name="Mechanic", id=446, r=25.0, x=108.0,   y=6624.0,  z=31.0},	-- LSC Paleto Bay
-	{name="Mechanic", id=446, r=18.0, x=538.0,   y=-183.0,  z=54.0},	-- Mechanic Hawic
-	{name="Mechanic", id=446, r=15.0, x=1774.0,  y=3333.0,  z=41.0},	-- Mechanic Sandy Shores Airfield
-	{name="Mechanic", id=446, r=15.0, x=1143.0,  y=-776.0,  z=57.0},	-- Mechanic Mirror Park
-	{name="Mechanic", id=446, r=30.0, x=2508.0,  y=4103.0,  z=38.0},	-- Mechanic East Joshua Rd.
-	{name="Mechanic", id=446, r=16.0, x=2006.0,  y=3792.0,  z=32.0},	-- Mechanic Sandy Shores gas station
-	{name="Mechanic", id=446, r=25.0, x=484.0,   y=-1316.0, z=29.0},	-- Hayes Auto, Little Bighorn Ave.
-	{name="Mechanic", id=446, r=33.0, x=-1419.0, y=-450.0,  z=36.0},	-- Hayes Auto Body Shop, Del Perro
-	{name="Mechanic", id=446, r=33.0, x=268.0,   y=-1810.0, z=27.0},	-- Hayes Auto Body Shop, Davis
+	{name="Oficina", id=446, r=25.0, x=-337.0,  y=-135.0,  z=39.0},	-- LSC Burton
+	{name="Oficina", id=446, r=25.0, x=-1155.0, y=-2007.0, z=13.0},	-- LSC by airport
+	{name="Oficina", id=446, r=25.0, x=734.0,   y=-1085.0, z=22.0},	-- LSC La Mesa
+	{name="Oficina", id=446, r=25.0, x=1177.0,  y=2640.0,  z=37.0},	-- LSC Harmony
+	{name="Oficina", id=446, r=25.0, x=108.0,   y=6624.0,  z=31.0},	-- LSC Paleto Bay
+	{name="Oficina", id=446, r=18.0, x=538.0,   y=-183.0,  z=54.0},	-- Mechanic Hawic
+	{name="Oficina", id=446, r=15.0, x=1774.0,  y=3333.0,  z=41.0},	-- Mechanic Sandy Shores Airfield
+	{name="Oficina", id=446, r=15.0, x=1143.0,  y=-776.0,  z=57.0},	-- Mechanic Mirror Park
+	{name="Oficina", id=446, r=30.0, x=2508.0,  y=4103.0,  z=38.0},	-- Mechanic East Joshua Rd.
+	{name="Oficina", id=446, r=16.0, x=2006.0,  y=3792.0,  z=32.0},	-- Mechanic Sandy Shores gas station
+	{name="Oficina", id=446, r=25.0, x=484.0,   y=-1316.0, z=29.0},	-- Hayes Auto, Little Bighorn Ave.
+	{name="Oficina", id=446, r=33.0, x=-1419.0, y=-450.0,  z=36.0},	-- Hayes Auto Body Shop, Del Perro
+	{name="Oficina", id=446, r=33.0, x=268.0,   y=-1810.0, z=27.0},	-- Hayes Auto Body Shop, Davis
 --	{name="Mechanic", id=446, r=24.0, x=288.0,   y=-1730.0, z=29.0},	-- Hayes Auto, Rancho (Disabled, looks like a warehouse for the Davis branch)
-	{name="Mechanic", id=446, r=27.0, x=1915.0,  y=3729.0,  z=32.0},	-- Otto's Auto Parts, Sandy Shores
-	{name="Mechanic", id=446, r=45.0, x=-29.0,   y=-1665.0, z=29.0},	-- Mosley Auto Service, Strawberry
-	{name="Mechanic", id=446, r=44.0, x=-212.0,  y=-1378.0, z=31.0},	-- Glass Heroes, Strawberry
-	{name="Mechanic", id=446, r=33.0, x=258.0,   y=2594.0,  z=44.0},	-- Mechanic Harmony
-	{name="Mechanic", id=446, r=18.0, x=-32.0,   y=-1090.0, z=26.0},	-- Simeons
-	{name="Mechanic", id=446, r=25.0, x=-211.0,  y=-1325.0, z=31.0},	-- Bennys
-	{name="Mechanic", id=446, r=25.0, x=903.0,   y=3563.0,  z=34.0},	-- Auto Repair, Grand Senora Desert
-	{name="Mechanic", id=446, r=25.0, x=437.0,   y=3568.0,  z=38.0}		-- Auto Shop, Grand Senora Desert
+	{name="Oficina", id=446, r=27.0, x=1915.0,  y=3729.0,  z=32.0},	-- Otto's Auto Parts, Sandy Shores
+	{name="Oficina", id=446, r=45.0, x=-29.0,   y=-1665.0, z=29.0},	-- Mosley Auto Service, Strawberry
+	{name="Oficina", id=446, r=44.0, x=-212.0,  y=-1378.0, z=31.0},	-- Glass Heroes, Strawberry
+	{name="Oficina", id=446, r=33.0, x=258.0,   y=2594.0,  z=44.0},	-- Mechanic Harmony
+	{name="Oficina", id=446, r=18.0, x=-32.0,   y=-1090.0, z=26.0},	-- Simeons
+	{name="Oficina", id=446, r=25.0, x=-211.0,  y=-1325.0, z=31.0},	-- Bennys
+	{name="Oficina", id=446, r=25.0, x=903.0,   y=3563.0,  z=34.0},	-- Auto Repair, Grand Senora Desert
+	{name="Oficina", id=446, r=25.0, x=437.0,   y=3568.0,  z=38.0}		-- Auto Shop, Grand Senora Desert
 }
 
 local fixMessages = {
-	"You put the oil plug back in",
-	"You stopped the oil leak using chewing gum",
-	"You repaired the oil tube with gaffer tape",
-	"You tightened the oil pan screw and stopped the dripping",
-	"You kicked the engine and it magically came back to life",
-	"You removed some rust from the spark tube",
-	"You yelled at your vehicle, and it somehow had an effect"
+	"Voce plugou a mangueira de oleo novamente",
+	"Voce parou uma vazamento com um chiclete",
+	"Voce prendeu algumas peças com fita gaffer",
+	"Voce apertou alguns parafusos e parou uma vazamento",
+	"Voce chutou o motor e ele voltou a funcionar como uma magica",
+	"Voce colocou mais agua no radiador",
+	"Voce gritou para o seu veiculo e por algum motivo ele voltou a funcionar"
 }
 local fixMessageCount = 7
 local fixMessagePos = math.random(fixMessageCount)
 
 local noFixMessages = {
-	"You checked the oil plug. It's still there",
-	"You looked at your engine, it seemed fine",
-	"You made sure that the gaffer tape was still holding the engine together",
-	"You turned up the radio volume. It just drowned out the weird engine noises",
-	"You added rust-preventer to the spark tube. It made no difference",
-	"Never fix something that ain't broken they said. You didn't listen. At least it didn't get worse"
+	"Voce deu uma olhada na mangueira de oleo e ela ainda esta la",
+	"Voce deu uma olhada no motor e ele parece estar bem",
+	"Voce se certificou que a fita gaffer ainda esta segurando todo o motor",
+	"Voce aumentou o volume do radio... assim nao da de ouvir os barulhos estranhos vindos do motor",
+	"Voce adicionou um antirust ao radiador. Nao fez diferenca alguma",
+	"Nunca arrume algo que nao esta quebrado, foi o que eles disseram. Voce nao ouviu... Bem, poderia ser pior"
 }
 local noFixMessageCount = 6
 local noFixMessagePos = math.random(noFixMessageCount)
@@ -118,7 +118,7 @@ AddEventHandler('iens:repair', function()
 			healthEngineLast=1000.0
 			healthPetrolTankLast=1000.0
 			SetVehicleEngineOn(vehicle, true, false )
-			notification("~g~The mechanic repaired your car!")
+			notification("~g~O mecanico reparou o seu veiculo!")
 			return
 		end
 		if GetVehicleEngineHealth(vehicle) < cascadingFailureThreshold + 5 then
@@ -130,11 +130,11 @@ AddEventHandler('iens:repair', function()
 				healthPetrolTankLast=750.0
 					SetVehicleEngineOn(vehicle, true, false )
 				SetVehicleOilLevel(vehicle,(GetVehicleOilLevel(vehicle)/3)-0.5)
-				notification("~g~" .. fixMessages[fixMessagePos] .. ", now get to a mechanic!")
+				notification("~g~" .. fixMessages[fixMessagePos] .. ", agora va ate um mecanico/mecanica!")
 				fixMessagePos = fixMessagePos + 1
 				if fixMessagePos > fixMessageCount then fixMessagePos = 1 end
 			else
-				notification("~r~Your vehicle was too badly damaged. Unable to repair!")
+				notification("~r~Seu veiculo esta muito danificado, voce nao consegue arrumar!")
 			end
 		else
 			notification("~y~" .. noFixMessages[noFixMessagePos] )
@@ -142,13 +142,13 @@ AddEventHandler('iens:repair', function()
 			if noFixMessagePos > noFixMessageCount then noFixMessagePos = 1 end
 		end
 	else
-		notification("~y~You must be in a vehicle to be able to repair it")
+		notification("~y~Voce precisa estar no veiculo para poder repara-lo")
 	end
 end)
 
 RegisterNetEvent('iens:notAllowed')
 AddEventHandler('iens:notAllowed', function()
-	notification("~r~You don't have permission to repair vehicles")
+	notification("~r~Voce nao tem permissao para reparar veiculos")
 end)
 
 function notification(msg)

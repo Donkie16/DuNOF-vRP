@@ -14,9 +14,9 @@ local everyoneWhitelisted = true
 
 local whitelist = 
 {
-	"steam:123456789012345",
-	"steam:000000000000000",
-	"ip:192.168.0.1"			-- not sure if ip whitelist works?
+--	"steam:123456789012345",
+--	"steam:000000000000000",
+--	"ip:192.168.0.1"			-- not sure if ip whitelist works?
 }
 
 
