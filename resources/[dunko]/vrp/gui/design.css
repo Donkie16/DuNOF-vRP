@@ -43,7 +43,7 @@ html, body {
 .wprompt{
   background-color: #3A3A3A;
   border: 1px solid cyan;
-  font-family: 'Roboto', sans-serif;
+  font-family: bankgothic;
   box-shadow: 1px 1px 18px 1px #000000;
   color: cyan;  
   width: 300px;
@@ -57,7 +57,7 @@ html, body {
 
 .wprompt h1{
   font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: bankgothic;
 }
 
 .wprompt textarea{
@@ -80,7 +80,7 @@ html, body {
 
 .wprompt .help{
   font-size: 12px;
-  font-family: 'Roboto', sans-serif;
+  font-family: bankgothic;
   padding: 3px;
   text-transform: uppercase;
 }
@@ -100,7 +100,7 @@ html, body {
 .request_manager div > span{
   background-color: #3A3A3A;
   border: 1px solid cyan;
-  font-family: 'Roboto', sans-serif;
+  font-family: bankgothic;
   box-shadow: inset 1px 1px 18px 1px #000000;
   border-radius: 5px 5px 0px 0px;
   font-size: 25px;
@@ -112,7 +112,7 @@ html, body {
 }
 
 .request_manager .yes{
-  font-family: 'Roboto', sans-serif;
+  font-family: bankgothic;
   padding-left: 15px;
   color: rgb(0,255,0);
   font-size: 1em;
@@ -120,7 +120,7 @@ html, body {
 }
 
 .request_manager .no{
-  font-family: 'Roboto', sans-serif;
+  font-family: bankgothic;
   color: rgb(255,0,0);
   font-size: 1em;
   text-transform: uppercase;

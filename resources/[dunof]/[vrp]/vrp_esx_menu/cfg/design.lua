@@ -31,11 +31,11 @@ cfg.menu = [[
   font-family: bankgothic;  
   background-color: #ffffff;
   color: #000000;
-  width: 400px;
+  width: 300px;
   float: left;
   margin-top: 50px;
-  text-align : center;
-  height: 55%;
+  text-align : left;
+  height: 50%;
   box-shadow : 0px 0px 50px 0px #000;
   position   : absolute;
   margin-left: 25px;
