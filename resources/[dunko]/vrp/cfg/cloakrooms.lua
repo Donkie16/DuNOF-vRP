@@ -7,7 +7,7 @@ local cfg = {}
 local surgery_male = { model = "mp_m_freemode_01" }
 local surgery_female = { model = "mp_f_freemode_01" }
 -- Recruta
---local cop_male = { model = "s_m_y_ranger_01"}
+local cop_male = { model = "s_m_y_ranger_01"}
 --local cop_female = { model = "s_f_y_cop_01"}
 -- Policia Civil
 local detective_male = { model = "s_m_m_CIASec_01"}
@@ -66,7 +66,7 @@ cfg.cloakroom_types = {
   },
 
   ["Recruta"] = {
-    _config = { permissions = {"Officer.cloakroom"} },
+    _config = { permissions = {"police.cloakroom"} },
     ["Masculino"] = cop_male
 --    ["Feminino"] = cop_female
   },
