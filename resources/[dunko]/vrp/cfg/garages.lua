@@ -344,7 +344,7 @@ cfg.garage_types = {
 
 -- # HOUSE GARAGE
 
-    ["Garagem Residencial"] = {0
+    ["Garagem Residencial"] = {
         _config = {vtype="car",blipid=357,blipcolor=69},
         ["f4rr"] = {"Agusta F4 RR",35000, ""},
         ["AKUMA"] = {"Akuma",9000, ""},
