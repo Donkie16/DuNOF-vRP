@@ -11,9 +11,10 @@ html, body {
   cursor: pointer;
 }
 
+
 @font-face {
-  font-family: 'Pricedown';
-  src: url(fonts/Pdown.woff);
+  font-family: bankgothic;
+   src: url(fonts/bankgothic.ttf);
 }
 
 .console{
@@ -24,6 +25,7 @@ html, body {
 
 /* menu */
 
+/*
 .menu{
 	/* Edit the following image to your correct image or use mine that is located at: http://P4NDAzz.org/ePhone (THIS IS THE PHONE BACKGROUND)*/
 	background-image: url('http://P4NDAzz.org/ePhone/bg9.jpg');
@@ -98,7 +100,7 @@ html, body {
   background-color: rgba(255,255,255,0.90);
   color: black;
 }
-
+*/
 /* progress bar */
 .progressbar{
   position: absolute;
