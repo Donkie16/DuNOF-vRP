@@ -591,7 +591,7 @@ cfg.selectors = {
 		"Desempregado"
 	},
 
-	["Empregos SAMU"] = { -- Spawn Hospital
+	["Depto Saude"] = { -- Spawn Hospital
 		_config = {x =  249.50639343262, y = -1375.0694580078, z = 39.534378051758, blipid = 351, blipcolor = 3, permissions = {"ems.whitelisted"} },
 		"Chefe do SAMU",
 		"Paramedico do SAMU",
