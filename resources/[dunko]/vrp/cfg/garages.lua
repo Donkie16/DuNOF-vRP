@@ -339,7 +339,7 @@ cfg.garage_types = {
 
     ["Veiculos Novidade"] = {
         _config = {vtype="car",blipid=50,blipcolor=5},
-        ["599xx"] = {"Ferrari 599 GTO",1000000, "Oferta de Novidade: 50% Desconto"},
+        ["599xx"] = {"Ferrari 599 GTO",1000000, "Oferta de Novidade: 50% Desconto"}
     },
 
 -- # HOUSE GARAGE
