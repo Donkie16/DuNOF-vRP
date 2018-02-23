@@ -88,7 +88,7 @@ cfg.garage_types = {
     ["Transporte Medico"] = {
         _config = {vtype="car",blipid=67,blipcolor=4,permissions={"medical.vehicle"}},
         ["pony2"] = {"Transporte de Ervas",0, "pony2"}
-    }
+    },
 
     ["Coletor de Lixo"] = {
         _config = {vtype="car",blipid=67,blipcolor=4,permissions={"trash.vehicle"}},
