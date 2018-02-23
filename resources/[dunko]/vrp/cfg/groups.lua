@@ -565,7 +565,7 @@ cfg.selectors = {
 		_config = {x = 447.35137939453, y = -975.57592773438, z = 30.689584732056, blipid = 351, blipcolor = 38, permissions = {"cop.whitelisted"} },
 		"Recruta",
 		"Policia Civil",
-,		"Policia Militar",
+		"Policia Militar",
 		"BOPE",
 		"Chefe da Policia",
 		"Desempregado"
@@ -575,7 +575,7 @@ cfg.selectors = {
 		_config = {x = 1857.5961914063, y = 3688.8952636719, z = 34.267040252686, blipid = 351, blipcolor = 38, permissions = {"cop.whitelisted"} },
 		"Recruta",
 		"Policia Civil",
-,		"Policia Militar",
+		"Policia Militar",
 		"BOPE",
 		"Chefe da Policia",
 		"Desempregado"
@@ -585,7 +585,7 @@ cfg.selectors = {
 		_config = {x = -449.00927734375, y = 6017.1953125, z = 31.716377258301, blipid = 351, blipcolor = 38, permissions = {"cop.whitelisted"} },
 		"Recruta",
 		"Policia Civil",
-,		"Policia Militar",
+		"Policia Militar",
 		"BOPE",
 		"Chefe da Policia",
 		"Desempregado"
