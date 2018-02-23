@@ -337,14 +337,14 @@ cfg.garage_types = {
         _config = {vtype="car",blipid=50,blipcolor=4}
     },
 
-    ["Veiculos Novidade"] = {
-        _config = {vtype="car",blipid=50,blipcolor=5},
-        ["599xx"] = {"Ferrari 599 GTO",1000000, "Oferta de Novidade: 50% Desconto"}
-    },
+--  ["Veiculos Novidade"] = {
+--      _config = {vtype="car",blipid=50,blipcolor=5},
+--      ["599xx"] = {"Ferrari 599 GTO",1000000, "Oferta de Novidade: 50% Desconto"}
+--  },
 
 -- # HOUSE GARAGE
 
-    ["Garagem Residencial"] = {
+    ["Garagem Residencial"] = {0
         _config = {vtype="car",blipid=357,blipcolor=69},
         ["f4rr"] = {"Agusta F4 RR",35000, ""},
         ["AKUMA"] = {"Akuma",9000, ""},

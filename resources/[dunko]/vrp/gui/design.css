@@ -11,16 +11,93 @@ html, body {
   cursor: pointer;
 }
 
-
 @font-face {
-  font-family: bankgothic;
-   src: url(fonts/bankgothic.ttf);
+  font-family: 'Pricedown';
+  src: url(fonts/Pdown.woff);
 }
 
 .console{
   background-color: white;
-  color: green;
+  color: red;
   font-weight: bold;
+}
+
+/* menu */
+
+.menu{
+  background-color: rgba(255,255,255,0.0);
+  font-family: 'Roboto', sans-serif;
+  color: cyan;
+  width: 300px;
+  height: 99%;
+  margin-left: -75px;
+  margin: 25px; 
+  align-content:center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px; 
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu_description{
+  position: static;
+  float: left;
+  border-radius: 0px 0px 25px 0px;
+  font-weight: bold;
+  padding: 9px;
+  font-size: 1.2em;
+  max-width: 500px;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 12px;
+  border: 1px solid cyan;
+  color: cyan;
+  box-shadow: inset 1px 1px 18px 1px #000000;
+  background-color: #3A3A3A;
+  text-shadow: 1px 1px 4px #3A3A3A;
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu h1{
+ display:none;
+ font-size: 0px;
+}
+
+.choices{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.choices::-webkit-scrollbar{ 
+  display: none; 
+}
+
+.choices div{
+  padding: 10px 24px;
+  margin: 10px auto;
+  text-transform: uppercase;
+  font-size: 12px;
+  border: 1px solid cyan;
+  color: cyan;  
+  text-shadow: 1px 1px 4px #3A3A3A;
+  background-color: #3A3A3A;
+  border-radius: 25px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  
+}
+
+.choices .selected{
+  background-color: cyan;
+  color: #3A3A3A;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #3A3A3A;
+  border-radius: 25px;
+  text-shadow: 1px 1px 4px #00FFFF; 
+  box-shadow: inset 1px 1px 18px 1px #000000;
 }
 
 /* progress bar */
@@ -43,7 +120,7 @@ html, body {
 .wprompt{
   background-color: #3A3A3A;
   border: 1px solid cyan;
-  font-family: bankgothic;
+  font-family: 'Roboto', sans-serif;
   box-shadow: 1px 1px 18px 1px #000000;
   color: cyan;  
   width: 300px;
@@ -57,7 +134,7 @@ html, body {
 
 .wprompt h1{
   font-size: 12px;
-  font-family: bankgothic;
+  font-family: 'Roboto', sans-serif;
 }
 
 .wprompt textarea{
@@ -80,7 +157,7 @@ html, body {
 
 .wprompt .help{
   font-size: 12px;
-  font-family: bankgothic;
+  font-family: 'Roboto', sans-serif;
   padding: 3px;
   text-transform: uppercase;
 }
@@ -100,7 +177,7 @@ html, body {
 .request_manager div > span{
   background-color: #3A3A3A;
   border: 1px solid cyan;
-  font-family: bankgothic;
+  font-family: 'Roboto', sans-serif;
   box-shadow: inset 1px 1px 18px 1px #000000;
   border-radius: 5px 5px 0px 0px;
   font-size: 25px;
@@ -112,7 +189,7 @@ html, body {
 }
 
 .request_manager .yes{
-  font-family: bankgothic;
+  font-family: 'Roboto', sans-serif;
   padding-left: 15px;
   color: rgb(0,255,0);
   font-size: 1em;
@@ -120,7 +197,7 @@ html, body {
 }
 
 .request_manager .no{
-  font-family: bankgothic;
+  font-family: 'Roboto', sans-serif;
   color: rgb(255,0,0);
   font-size: 1em;
   text-transform: uppercase;
@@ -143,4 +220,3 @@ html, body {
   display: none;
   opacity: 0.90;
 }
-
