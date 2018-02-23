@@ -421,48 +421,24 @@ cfg.garage_types = {
     ["surano"] = {"Surano",95000, ""}
   },
   
-  ["police"] = {
+  ["Veiculos da Policia"] = {
     _config = {vtype="car",blipid=56,blipcolor=38,permissions={"police.vehicle"}},
-    ["police"] = {"Police Cruiser",0, "police"},
-    ["police2"] = {"Dodge Sheriff",0, "police"},
-    ["police3"] = {"Police3",0, "police"},
-    ["police4"] = {"police4",0, "police"},
-    ["police5"] = {"Police SUV",0, "police"},
-    ["police6"] = {"Police K9",0, "police"},
-    ["police7"] = {"Police7",0, "police"},
-	["police8"] = {"Police8",0, "police"},
-    ["policet"] = {"policet",0, "police"},
-    ["sheriff3"] = {"Sheriff",0, "police"},
-    ["sheriff2"] = {"Sheriff SUV",0, "police"},
-    ["sheriff"] = {"2015 Sheriff",0, "police"},
-    ["riot"] = {"SWAT",0, "police"},
-	["fbi"] = {"Unmarked",0, "police"},
-	["hwaycar2"] = {"State Trooper",0, "police"},
-	["hwaycar3"] = {"Trooper SUV",0, "police"},
-	["hwaycar5"] = {"hwaycar5",0, "police"},
-	["hwaycar6"] = {"hwaycar6",0, "police"},
-	["hwaycar7"] = {"hwaycar7",0, "police"},
-	["hwaycar8"] = {"hwaycar8",0, "police"},
-	["hwaycar9"] = {"hwaycar9",0, "police"},
-	["hwaycar10"] = {"hwaycar10",0, "police"},
-	["hwaycar"] = {"hwaycar",0, "police"},
-    ["polf430"] = {"Police Ferarri",0, "police"},
-	["policeb"] = {"policeb",0, "police"}
+    ["pmsuv"] = {"SUV Policia Militar",0, "police"},
+    ["hiluxpmesp"] = {"Hilux Tatico PM",0, "police"},
+    ["bopeb"] = {"Blazer BOPE",0, "police"},
+    ["riot"] = {"SWAT",0, "police"}
   },
-  ["Cadet"] = {
+  ["Veiculos de Recruta"] = {
     _config = {vtype="car",blipid=56,blipcolor=38,permissions={"Cadet.vehicle"}},
-    ["police7"] = {"police",0, "police"}
+    ["pmsuv"] = {"SUV Policia Militar",0, "police"}
   },
-  ["Bounty"] = {
-    _config = {vtype="car",blipid=56,blipcolor=38,permissions={"Bounty.vehicle"}},
-    ["fbi"] = {"Unmarked",0, "police"}
-  },
-  ["emergency"] = {
+
+  ["SAMU"] = {
     _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.vehicle"}},
-    ["Ambulance"] = {"Ambulance",0, "emergency"},
-	["hwaycar4"] = {"Tahoe",0, "emergency"},
-	["firetruk"] = {"firetruk",0, "emergency"}
+    ["Ambulance"] = {"Ambulancia",0, "emergency"},
+	["firetruk"] = {"Caminhao Bombeiro",0, "emergency"}
   },
+  
   ["Police Helicopters"] = {
     _config = {vtype="car",blipid=43,blipcolor=38,radius=5.1,permissions={"police.vehicle"}},
     ["polmav"] = {"Maverick",0, "emergency"}
@@ -471,6 +447,7 @@ cfg.garage_types = {
     _config = {vtype="car",blipid=43,blipcolor=1,radius=5.1,permissions={"emergency.vehicle"}},
     ["supervolito2"] = {"EMS",0, "emergency"}
   },
+
   ["Pilotla"] = {
     _config = {vtype="plane",blipid=16,blipcolor=30,permissions={"pilot.vehicle"}},
     ["jet"] = {"Boeing 747",0, "jet"}
@@ -487,6 +464,7 @@ cfg.garage_types = {
     _config = {vtype="plane",blipid=43,blipcolor=30,permissions={"air.vehicle"}},
      ["volatus"] = {"Helicopter",0, "volatus"}
   }, 
+
   ["uber"] = {
     _config = {vtype="car",blipid=50,blipcolor=81,permissions={"uber.vehicle"}},
     ["surge"] = {"Surge",0, "surge"}
@@ -536,12 +514,12 @@ cfg.garages = {
   {"Mid Range",1181.6231689453,2650.830078125,37.821151733398},
   {"sportsclassics",112.275, 6619.83, 31.8154},
   {"Motorcycles",-205.789, -1308.02, 31.2916},
-  {"police",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
-  {"Cadet",451.2121887207,-1018.2822875977,28.495378494263}, --- cadet garage
-  {"police",477.99038696289,-1020.9154663086,28.011201858521},
+  {"Veiculos da Policia",451.2121887207,-1018.2822875977,28.495378494263},	-- jobs garage
+  {"Veiculos de Recruta",451.2121887207,-1018.2822875977,28.495378494263}, --- cadet garage
+  {"Veiculos da Policia",477.99038696289,-1020.9154663086,28.011201858521},
   {"Bounty",512.07818603516,-3052.1579589844,6.0687308311462},  
-  {"police",1868.5435791016,3696.0295410156,33.5693359375},  -- sandy shores
-  {"police",-476.92425537109,6026.9951171875,31.340547561646},  -- paleto
+  {"Veiculos da Policia",1868.5435791016,3696.0295410156,33.5693359375},  -- sandy shores
+  {"Veiculos da Policia",-476.92425537109,6026.9951171875,31.340547561646},  -- paleto
   {"emergency",358.91650390625, -607.78515625, 28.6820983886719}, -- main
   {"emergency",1833.3223876953,3661.3088378906,33.875843048096}, -- sandy shores
   {"emergency",-255.98040771484,6346.1127929688,32.426189422607}, -- paleto
