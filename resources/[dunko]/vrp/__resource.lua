@@ -63,15 +63,15 @@ client_scripts{
 -- client files
 files{
   "cfg/client.lua",
---  "gui/index.html",
---  "gui/design.css",
---  "gui/main.js",
---  "gui/Menu.js",
---  "gui/ProgressBar.js",
---  "gui/WPrompt.js",
---  "gui/RequestManager.js",
---  "gui/AnnounceManager.js",
---  "gui/Div.js",
---  "gui/dynamic_classes.js",
---  "gui/fonts/Pdown.woff"
+  "gui/index.html",
+  "gui/design.css",
+  "gui/main.js",
+  "gui/Menu.js",
+  "gui/ProgressBar.js",
+  "gui/WPrompt.js",
+  "gui/RequestManager.js",
+  "gui/AnnounceManager.js",
+  "gui/Div.js",
+  "gui/dynamic_classes.js",
+  "gui/fonts/bankgothic.ttf"
 }
