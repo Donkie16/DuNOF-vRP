@@ -3,17 +3,17 @@ local cfg = {}
 
 -- define customization parts
 local parts = {
-  ["Face"] = 0,
-  ["Hair"] = 2,
-  ["Hand"] = 3,
-  ["Legs"] = 4,
-  ["Shirt"] = 8,
-  ["Shoes"] = 6,
-  ["Jacket"] = 11,
-  ["Hats"] = "p0",
-  ["Glasses"] = "p1",
-  ["Ears"] = "p2",
-  ["Watches"] = "p6",
+  ["Rosto"] = 0,
+  ["Cabelo"] = 2,
+  ["Maos"] = 3,
+  ["Pernas"] = 4,
+  ["Camiseta"] = 8,
+  ["Sapatos"] = 6,
+  ["Jaquetas"] = 11,
+  ["Chapeus"] = "p0",
+  ["Oculos"] = "p1",
+  ["Orelha"] = "p2",
+  ["Relogio"] = "p6",
   ["Extras 1"] = 9,
   ["Extras2"] = 10
 }
