@@ -40,6 +40,7 @@ cfg.garage_types = {
     ["Veiculos SAMU"] = {
         _config = {vtype="car",blipid=50,blipcolor=3,permissions={"emergency.vehicle"}},
         ["Ambulance"] = {"Ambulancia SAMU",0, "emergency"},
+        ["hwaycar4"] = {"SUV",0, "emergency"},
         ["firetruk"] = {"Caminhao Bombeiro",0, "emergency"}
     },
 
