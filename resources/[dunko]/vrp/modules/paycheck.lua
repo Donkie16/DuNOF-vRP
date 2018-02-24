@@ -4,21 +4,21 @@ RegisterServerEvent('paycheck:salary')
 AddEventHandler('paycheck:salary', function()
   	local user_id = vRP.getUserId(source)
 	if vRP.hasPermission(user_id,"police.paycheck") then
-		vRP.giveMoney(user_id,2000)
-		vRPclient.notify(source,{"Payday: $2000"})
+		vRP.giveMoney(user_id,8000)
+		vRPclient.notify(source,{"Payday: $8000"})
 	end		
 	-- EMS Paychecks	
 	if vRP.hasPermission(user_id,"emsChief.paycheck") then
-		vRP.giveMoney(user_id,5000)
-		vRPclient.notify(source,{"Payday: $5000"})
+		vRP.giveMoney(user_id,10000)
+		vRPclient.notify(source,{"Payday: $10000"})
 	end
 	if vRP.hasPermission(user_id,"emsLieutenant.paycheck") then
 		vRP.giveMoney(user_id,3000)
 		vRPclient.notify(source,{"Payday: $3000"})
 	end
 	if vRP.hasPermission(user_id,"emsMedic.paycheck") then
-		vRP.giveMoney(user_id,2000)
-		vRPclient.notify(source,{"Payday: $2000"})
+		vRP.giveMoney(user_id,8000)
+		vRPclient.notify(source,{"Payday: $8000"})
 	end
 	if vRP.hasPermission(user_id,"emsSearchRescue.paycheck") then
 		vRP.giveMoney(user_id,2500)
@@ -30,8 +30,8 @@ AddEventHandler('paycheck:salary', function()
 		vRPclient.notify(source,{"Payday: $2000"})
 	end
 	if vRP.hasPermission(user_id,"Chief.paycheck") then
-		vRP.giveMoney(user_id,3000)
-		vRPclient.notify(source,{"Payday: $3000"})
+		vRP.giveMoney(user_id,15000)
+		vRPclient.notify(source,{"Payday: $15000"})
 	end
 	if vRP.hasPermission(user_id,"Commander.paycheck") then
 		vRP.giveMoney(user_id,4000)
@@ -46,8 +46,8 @@ AddEventHandler('paycheck:salary', function()
 		vRPclient.notify(source,{"Payday: $2500"})
 	end
 	if vRP.hasPermission(user_id,"Detective.paycheck") then
-		vRP.giveMoney(user_id,2250)
-		vRPclient.notify(source,{"Payday: $2250"})
+		vRP.giveMoney(user_id,8000)
+		vRPclient.notify(source,{"Payday: $8000"})
 	end
 	if vRP.hasPermission(user_id,"Sergeant.paycheck") then
 		vRP.giveMoney(user_id,2000)
@@ -66,20 +66,20 @@ AddEventHandler('paycheck:salary', function()
 		vRPclient.notify(source,{"Payday: $2000"})
 	end
 	if vRP.hasPermission(user_id,"citizen.paycheck") then
-		vRP.giveMoney(user_id,2000)
-		vRPclient.notify(source,{"Payday: $2000"})
+		vRP.giveMoney(user_id,500)
+		vRPclient.notify(source,{"Payday: $500"})
 	end
 	if vRP.hasPermission(user_id,"SWAT.paycheck") then
-		vRP.giveMoney(user_id,2500)
-		vRPclient.notify(source,{"Payday: $2500"})
+		vRP.giveMoney(user_id,10000)
+		vRPclient.notify(source,{"Payday: $10000"})
 	end
 	if vRP.hasPermission(user_id,"sheriff.paycheck") then
 		vRP.giveMoney(user_id,2500)
 		vRPclient.notify(source,{"Payday: $2500"})
 	end
 	if vRP.hasPermission(user_id,"Cadet.paycheck") then
-		vRP.giveMoney(user_id,2000)
-		vRPclient.notify(source,{"Payday: $2000"})
+		vRP.giveMoney(user_id,8000)
+		vRPclient.notify(source,{"Payday: $8000"})
 	end
 	if vRP.hasPermission(user_id,"trafficguard.paycheck") then
 		vRP.giveMoney(user_id,1500)
