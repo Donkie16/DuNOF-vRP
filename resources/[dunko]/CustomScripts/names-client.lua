@@ -48,18 +48,18 @@ Citizen.CreateThread(function()
                 if(ignorePlayerNameDistance) then
                     if NetworkIsPlayerTalking( id ) then
                         DrawText3D(x2, y2, z2+1, GetPlayerServerId(id), 247,124,24)
-					else
+                    else
                         DrawText3D(x2, y2, z2+1, GetPlayerServerId(id), 255,255,255)
-					end
+                    end
                 end
  
                 if ((distance < disPlayerNames)) then
                     if not (ignorePlayerNameDistance) then
-					if NetworkIsPlayerTalking( id ) then
+                    if NetworkIsPlayerTalking( id ) then
                         DrawText3D(x2, y2, z2+1, GetPlayerServerId(id), 247,124,24)
-					else
+                    else
                         DrawText3D(x2, y2, z2+1, GetPlayerServerId(id), 255,255,255)
-					end
+                    end
                     end
                 end  
             end
