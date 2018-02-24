@@ -44,10 +44,10 @@ local function gen(ftype, vary_hunger, vary_thirst)
           if vary_thirst ~= 0 then vRP.varyThirst(user_id,vary_thirst) end
 
           if ftype == "drink" then
-            vRPclient.notify(player,{"~b~ Drinking "..name.."."})
+            vRPclient.notify(player,{"~b~ Bebendo "..name.."."})
             play_drink(player)
           elseif ftype == "eat" then
-            vRPclient.notify(player,{"~o~ Eating "..name.."."})
+            vRPclient.notify(player,{"~o~ Comendo "..name.."."})
             play_eat(player)
           end
 
@@ -84,7 +84,7 @@ items["tacos"] = {"Cachorro-quente","", gen("eat",-20,0),0.2}
 items["sandwich"] = {"Sanduiche","Um lanchinho saboroso!", gen("eat",-25,0),0.5}
 items["kebab"] = {"Kebab","", gen("eat",-45,0),0.85}
 items["pdonut"] = {"Pizza","", gen("eat",-25,0),0.5}
-items["catfish"] = {"Churrasco","", gen("eat",10,15),0.3}
-items["bass"] = {"Prato Feito","", gen("eat",10,15),0.3}
+items["catfish"] = {"Peixe-gato","", gen("eat",10,15),0.3}
+items["bass"] = {"Robalo","", gen("eat",10,15),0.3}
 
 return items
