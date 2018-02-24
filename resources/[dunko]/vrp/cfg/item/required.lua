@@ -15,7 +15,7 @@ items["money"] = {"Dinheiro","Dinheiro embalado.",function(args)
     local user_id = vRP.getUserId(player)
     if user_id ~= nil then
       local amount = vRP.getInventoryItemAmount(user_id, idname)
-      vRP.prompt(player, "Quanto voce quer desenbalar? (max "..amount..")", "", function(player,ramount)
+      vRP.prompt(player, "Quanto voce quer desembalar? (max "..amount..")", "", function(player,ramount)
         ramount = parseInt(ramount)
         if vRP.tryGetInventoryItem(user_id, idname, ramount, true) then -- unpack the money
           vRP.giveMoney(user_id, ramount)
