@@ -10,11 +10,10 @@ local cfg = {}
 
 cfg.gunshop_types = {
 
-    ["Armas2"] = {
+    ["Armas Civis"] = {
         _config = {blipid=110,blipcolor=1},
 
         -- # WHITE GUNS
-
         ["WEAPON_BOTTLE"] = {"Garrafa",500,0,""},
         ["WEAPON_BAT"] = {"Taco",1000,0,""},
         ["WEAPON_KNUCKLE"] = {"Soco-ingles",1000,0,""},
@@ -28,7 +27,6 @@ cfg.gunshop_types = {
         --["WEAPON_MACHETE"] = {"Machete",150,0,""},
 
         -- # TOOLS
-
         ["WEAPON_FLASHLIGHT"] = {"Lanterna",200,0,""},
         ["WEAPON_FLARE"] = {"Sinalizador",1000,1000,""},
         ["WEAPON_FLAREGUN"] = {"Pistola Sinalizador",5000,0,""},
@@ -37,7 +35,6 @@ cfg.gunshop_types = {
         --["WEAPON_SNOWBALL"] = {"SnowBall",3000000,0,""},
 
         -- # PISTOLS
-
         ["WEAPON_SNSPISTOL"] = {"Pistola Fajuta",25000,2,""},
         ["WEAPON_PISTOL"] = {"Pistola",50000,2,""}
         --["WEAPON_VINTAGEPISTOL"] = {"Vintage Pistol",2500,2,""},
@@ -47,11 +44,9 @@ cfg.gunshop_types = {
         --["WEAPON_APPISTOL"] = {"Ap Pistol",7500,2,""},
 
         -- # OLD GUNS
-
         --["WEAPON_MUSKET"] = {"Musket",50000,0,""},
 
         -- # SHOTGUNS
-
         --["WEAPON_SAWNOFFSHOTGUN"] = {"Saw Shotgun",30000,65,""},
         --["WEAPON_PUMPSHOTGUN"] = {"Pump Shotgun",7000,20,""},
         --["WEAPON_BULLPUPSHOTGUN"] = {"BullUp Shotgun",10000,30,""},
@@ -59,7 +54,6 @@ cfg.gunshop_types = {
         --["WEAPON_ASSAULTSHOTGUN"] = {"Assault Shotgun",150000,50,""},
 
         -- # SMG
-
         --["WEAPON_MICROSMG"] = {"Mini SMG",5000,5,""},
         --["WEAPON_SMG"] = {"SMG",5000,5,""},
         --["WEAPON_ASSAULTSMG"] = {"Assault SMG",5500,5,""},
@@ -96,33 +90,33 @@ cfg.gunshop_types = {
         --["WEAPON_SMOKEGRENADE"] = {"Smoke Grenade",50,0,""},
     },
 
-    ["Armas1"] = {
-        _config = {blipid=110,blipcolor=1},
-
-        -- # WHITE GUNS
-
-        ["WEAPON_BOTTLE"] = {"Garrafa",500,0,""},
-        ["WEAPON_BAT"] = {"Taco",1000,0,""},
-        ["WEAPON_KNUCKLE"] = {"Soco-ingles",1000,0,""},
-        ["WEAPON_KNIFE"] = {"Faca",5000,0,""},
+--    ["Armas1"] = {
+--        _config = {blipid=110,blipcolor=1},
+--
+--        -- # WHITE GUNS
+--
+--        ["WEAPON_BOTTLE"] = {"Garrafa",500,0,""},
+--        ["WEAPON_BAT"] = {"Taco",1000,0,""},
+--        ["WEAPON_KNUCKLE"] = {"Soco-ingles",1000,0,""},
+--        ["WEAPON_KNIFE"] = {"Faca",5000,0,""},
 
         -- # TOOLS
 
-        ["WEAPON_FLASHLIGHT"] = {"Lanterna",200,0,""},
-        ["WEAPON_FLARE"] = {"Sinalizador",1000,1000,""},
-        ["WEAPON_FLAREGUN"] = {"Pistola Sinalizador",5000,0,""},
-        ["WEAPON_FIREWORK"] = {"Fogos de Artificio",2000,0,""},
+--        ["WEAPON_FLASHLIGHT"] = {"Lanterna",200,0,""},
+--        ["WEAPON_FLARE"] = {"Sinalizador",1000,1000,""},
+--        ["WEAPON_FLAREGUN"] = {"Pistola Sinalizador",5000,0,""},
+--        ["WEAPON_FIREWORK"] = {"Fogos de Artificio",2000,0,""},
+--
+--        -- # PISTOLS
+--
+--        ["WEAPON_SNSPISTOL"] = {"Pistola Fajuta",25000,2,""},
+--        ["WEAPON_PISTOL"] = {"Pistola",50000,2,""}
 
-        -- # PISTOLS
-
-        ["WEAPON_SNSPISTOL"] = {"Pistola Fajuta",25000,2,""},
-        ["WEAPON_PISTOL"] = {"Pistola",50000,2,""}
-
-    },
+--    },
 
 -- # POLICE LOADOUTS
 
-    ["ArmasRecruta"] = {
+    ["Armas Recruta"] = {
         _config = {blipid=110,blipcolor=74, permissions = {"Cadet.loadshop"}},
 
         -- # TOOLS
@@ -141,7 +135,7 @@ cfg.gunshop_types = {
 
     },
 
-    ["ArmasPM"] = {
+    ["Armas PM"] = {
         _config = {blipid=110,blipcolor=74, permissions = {"police.loadshop"}},
 
         -- # TOOLS
@@ -164,7 +158,7 @@ cfg.gunshop_types = {
     },
 
 
-    ["ArmasBOPE"] = {
+    ["Armas BOPE"] = {
     _config = {blipid=110,blipcolor=74, permissions = {"SWAT.loadshop"}},
 
         -- # TOOLS
@@ -193,7 +187,7 @@ cfg.gunshop_types = {
     },
 
 
-    ["ArmasSAMU"] = {
+    ["Armas SAMU"] = {
         _config = {blipid=446,blipcolor=74, permissions = {"ems.loadshop"}},
 
         -- # TOOLS
@@ -202,7 +196,7 @@ cfg.gunshop_types = {
         ["WEAPON_NIGHTSTICK"] = {"Cacetete",0,0,""},
         ["WEAPON_FLARE"] = {"Sinalizador",0,0,""},
         ["WEAPON_FLAREGUN"] = {"Pistola Sinalizador",0,0,""},
-        ["WEAPON_PETROLCAN"] = {"Galao de Gasolina",0,0,""},
+        ["WEAPON_PETROLCAN"] = {"Galao de Gasolina",0,0,""}
 
     }
 
@@ -217,22 +211,22 @@ cfg.gunshop_types = {
 cfg.gunshops = {
 
     -- # CIVIL GUN SHOP
-    {"Armas2", 844.299, -1033.26, 28.1949},
-    {"Armas1", -331.50210571289,6082.5063476563,31.454769134521} -- Paleto
+    {"Armas Civis", 844.299, -1033.26, 28.1949},
+    {"Armas Civis", -331.50210571289,6082.5063476563,31.454769134521} -- Paleto
     --{"bombsticky", 708.847778320313,-959.231750488281,30.3953418731689},
 
     -- # POLICE LOADOUT
-    {"ArmasRecruta", 461.33551025391,-981.11071777344,30.689584732056},
-    {"ArmasPM", 461.33551025391,-981.11071777344,30.689584732056},--- main pd
-    {"ArmasPM", 1851.7342529297,3683.7416992188,34.267044067383}, -- sandy shores
-    {"ArmasPM", -442.724609375,6012.6293945313,31.716390609741},
-    {"ArmasBOPE", 461.33551025391,-981.11071777344,30.689584732056},
+    {"Armas Recruta", 461.33551025391,-981.11071777344,30.689584732056},
+    {"Armas PM", 461.33551025391,-981.11071777344,30.689584732056},--- main pd
+    {"Armas PM", 1851.7342529297,3683.7416992188,34.267044067383}, -- sandy shores
+    {"Armas PM", -442.724609375,6012.6293945313,31.716390609741},
+    {"Armas BOPE", 461.33551025391,-981.11071777344,30.689584732056},
     --{"Bounty_Hunter", 563.62060546875,-3126.9626464844,18.768604278564},
 
     -- # EMS LOADOUT
-    {"ArmasSAMU", 232.89363098145,-1368.3338623047,39.534381866455}, -- spawn hospital
-    {"ArmasSAMU", 1837.8341064453,3671.3837890625,34.276763916016}, -- sandy shores
-    {"ArmasSAMU", -246.91954040527,6330.349609375,32.42618560791} -- paleto
+    {"Armas SAMU", 232.89363098145,-1368.3338623047,39.534381866455}, -- spawn hospital
+    {"Armas SAMU", 1837.8341064453,3671.3837890625,34.276763916016}, -- sandy shores
+    {"Armas SAMU", -246.91954040527,6330.349609375,32.42618560791} -- paleto
 
 }
 
