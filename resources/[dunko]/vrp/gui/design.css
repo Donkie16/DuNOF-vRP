@@ -25,7 +25,7 @@ html, body {
 /* EDIT TO WORK WITH DUNKO VRP EDIT*/
 
 .menu{ 
-  \* background-image: url(https://s14.postimg.org/vuv4gh1jl/grey.jpg); */ /*Change the phone wallpaper here. You can use 'grey.jpg' 'red.jpg' 'code.jpg' 'blue.jpg' or add you own in gui/img/--> [Make sure to resize the pic so that the hight is 401px!] */
+  /* background-image: url(https://s14.postimg.org/vuv4gh1jl/grey.jpg); */ /*Change the phone wallpaper here. You can use 'grey.jpg' 'red.jpg' 'code.jpg' 'blue.jpg' or add you own in gui/img/--> [Make sure to resize the pic so that the hight is 401px!] */
   background-color: rgba(0,0,0,0);
   font-family: 'Roboto', sans-serif; 
   background-size: cover;
@@ -137,7 +137,8 @@ html, body {
 
 .wprompt textarea{
   outline: none !important;
-  background-image: url(https://s14.postimg.org/vuv4gh1jl/grey.jpg);
+  /*background-image: url(https://s14.postimg.org/vuv4gh1jl/grey.jpg);*/
+  background-color: rgba(0,0,0,0);
   font-family: 'Roboto', sans-serif; 
   color: white;
   width: 400px;
