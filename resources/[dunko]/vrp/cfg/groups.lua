@@ -57,7 +57,9 @@ cfg.groups = {
 	["recruiter"] = {
 		"player.list",
 		"player.group.add",
-		"player.group.remove"
+		"player.group.remove",
+		"player.whitelist",
+		"player.unwhitelist"
 	},
 
 	["mod"] = {
