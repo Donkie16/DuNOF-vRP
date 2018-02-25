@@ -2,7 +2,7 @@
 server_scripts{ 
   "deletepoliceweapons-server.lua",
   "me-server.lua",
-  "ooc-server.lua",
+  --"ooc-server.lua",
   "deathmessages-server.lua",
   -- "deletevehicle-server.lua",
   "weathersync-server.lua",
